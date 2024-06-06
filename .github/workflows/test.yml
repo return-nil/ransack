@@ -117,3 +117,4 @@ jobs:
           ruby bug_report_templates/test-ransacker-arel-present-predicate.rb
           ruby bug_report_templates/test-ransack-scope-and-column-same-name.rb
           rm Gemfile Gemfile.lock
+
