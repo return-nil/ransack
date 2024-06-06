@@ -13,13 +13,9 @@ jobs:
       fail-fast: false
       matrix:
         rails:
-          - v7.1.0
           - v7.0.3
-          - v6.1.6
         ruby:
-          - 3.2.2
-          - 3.1.4
-          - 3.0.6
+          - 3.3.2
     env:
       DB: sqlite3
       RAILS: ${{ matrix.rails }}
@@ -39,13 +35,9 @@ jobs:
       fail-fast: false
       matrix:
         rails:
-          - v7.1.0
           - v7.0.3
-          - v6.1.6
         ruby:
-          - 3.2.2
-          - 3.1.4
-          - 3.0.6
+          - 3.3.2
     env:
       DB: mysql
       RAILS: ${{ matrix.rails }}
@@ -74,13 +66,9 @@ jobs:
       fail-fast: false
       matrix:
         rails:
-          - v7.1.0
           - v7.0.3
-          - v6.1.6
         ruby:
-          - 3.2.2
-          - 3.1.4
-          - 3.0.6
+          - 3.3.2
     env:
       DB: postgres
       RAILS: ${{ matrix.rails }}
@@ -122,7 +110,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.2
+          ruby-version: 3.3.2
           bundler-cache: true
       - name: Run bug report templates
         run: |
